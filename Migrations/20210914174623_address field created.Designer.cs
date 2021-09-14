@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NetOnlineBooking.Data;
 
 namespace NetOnlineBooking.Migrations
 {
     [DbContext(typeof(NetOnlineBookingContext))]
-    partial class NetOnlineBookingContextModelSnapshot : ModelSnapshot
+    [Migration("20210914174623_address field created")]
+    partial class addressfieldcreated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

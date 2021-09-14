@@ -16,6 +16,7 @@ namespace NetOnlineBooking.Models
         public string PhoneNumber { get; set; }
         [DataType(DataType.Date)]
         public DateTime AppointmentData { get; set; }
+        public string AddressLine1 { get; set; }
 
     }
 }
